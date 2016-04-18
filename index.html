@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>Javascript Form</title>
+        <script src="valedation.js"></script>
+    </head>
+    <body>
+        <style>
+            p{
+                color:red;
+                font-family: arial;
+            }
+        </style>
+
+        <form>
+            <fieldset><legend>Create New Account</legend>
+            Full Name :
+            <input type="text" id="f_name" name="f_user" maxlength="15" max="10" placeholder="Fires Name">
+            <input type="text" id="m_name" name="m_user" maxlength="15" max="10" placeholder="Midel Name">
+            <input type="text" id="l_name" name="l_user" maxlength="15" max="10" placeholder="Last Name">
+            <p id="messg1"></p>
+            <br/>
+
+            Email Address :<br/>
+            <input type="email" id="email" name="email" maxlength="255" placeholder="johnSmith@XXXX.com">
+            <p id="messg2"></p>
+            <br/>
+            
+            Gender:<br/>
+            <input type="radio" name="gender" id="gender1"> Male
+            <br/>
+            <input type="radio" name="gender" id="gender2"> Female
+            <p id="messg3"></p>
+            <br/>
+                
+            Password :<br/>
+            <input type="password" name="pass" id="pass" max="30"><p id="messg4"></p>
+            <br/>
+            Conferm Password :<br/>
+            <input type="password" name="c_pass" id="c_pass" max="30"><p id="messg5"></p>
+            
+            <br/>
+                
+            <hr>
+            <input type="checkbox" id="agree">I agree for all terms useing account.
+            <br/><p id="messg6"></p>   
+            <br>
+                
+            <input type="submit" value="Sign In" onclick="valedation()" />
+            <input type="reset" value="Clear">
+                
+            </fieldset>
+        </form>
+        
+    </body>
+</html>
